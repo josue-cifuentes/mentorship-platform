@@ -1,0 +1,19 @@
+const express = require('express');
+const User = require('../models/User');
+
+const router = express.Router();
+
+router.get('/find-matches', async (req, res) => {
+  try {
+    const user = await User.findById(req.user.userId);
+    const potentialMatches = await User.find({
+      role: user.role === 'mentor' ? 'mentee' : 'mentor',
+      skills: { $in: user.skills }
+    }).limit(5);
+    res.send(potentialMatches);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+});
+
+module.exports = router;
