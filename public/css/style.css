@@ -8,13 +8,13 @@
 body {
     font-family: 'Roboto', 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f7f6;
+    color: #222220; /* Obsidian */
+    background-color: #FCFDFB; /* Pearl */
 }
 
 /* Navigation */
 .navbar {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.95); /* White */
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -28,13 +28,13 @@ body {
 }
 
 .navbar.scrolled {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #3498db;
+    color: #46286D; /* TELUS Purple */
     text-decoration: none;
 }
 
@@ -46,13 +46,13 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #595956; /* Slate */
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    color: #007F4A; /* Forest */
 }
 
 .login-btn, .signup-btn {
@@ -62,28 +62,28 @@ body {
 }
 
 .login-btn {
-    border: 2px solid #3498db;
-    color: #3498db;
+    border: 2px solid #007F4A; /* Forest */
+    color: #007F4A; /* Forest */
 }
 
 .login-btn:hover {
-    background: #3498db;
-    color: white;
+    background: #007F4A; /* Forest */
+    color: #FFFFFF; /* White */
 }
 
 .signup-btn {
-    background: #3498db;
-    color: white !important;
+    background: #46286D; /* TELUS Purple */
+    color: #FFFFFF !important; /* White */
 }
 
 .signup-btn:hover {
-    background: #2980b9;
+    background: #A929FD; /* Orchid */
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #3498db, #2c3e50);
-    color: white;
+    background: linear-gradient(135deg, #007F4A, #46286D); /* Forest to TELUS Purple */
+    color: #FFFFFF; /* White */
     padding: 8rem 5% 6rem;
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -92,7 +92,7 @@ body {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero p {
@@ -116,13 +116,13 @@ body {
     border: none;
     border-radius: 25px;
     font-size: 1rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-box button {
     padding: 1rem 2rem;
-    background: #e74c3c;
-    color: white;
+    background: #66CC00; /* TELUS Green */
+    color: #FFFFFF; /* White */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -131,20 +131,20 @@ body {
 }
 
 .search-box button:hover {
-    background: #c0392b;
+    background: #4DB913; /* Fern */
 }
 
 /* Features Section */
 .features {
     padding: 6rem 5%;
     text-align: center;
-    background-color: white;
+    background-color: #FFFFFF; /* White */
 }
 
 .features h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: #222220; /* Obsidian */
 }
 
 .feature-cards {
@@ -156,37 +156,37 @@ body {
 
 .card {
     padding: 2rem;
-    background: #fff;
+    background: #FFFFFF; /* White */
     border-radius: 15px;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .card i {
     font-size: 3rem;
-    color: #3498db;
+    color: #66CC00; /* TELUS Green */
     margin-bottom: 1.5rem;
 }
 
 .card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: #222220; /* Obsidian */
 }
 
 .card p {
-    color: #7f8c8d;
+    color: #595956; /* Slate */
 }
 
 /* Footer */
 footer {
-    background: #2c3e50;
-    color: white;
+    background: #222220; /* Obsidian */
+    color: #FFFFFF; /* White */
     padding: 4rem 5% 2rem;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
@@ -202,7 +202,7 @@ footer {
 .footer-section h4 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    color: #3498db;
+    color: #66CC00; /* TELUS Green */
 }
 
 .footer-section ul {
@@ -214,22 +214,22 @@ footer {
 }
 
 .footer-section a {
-    color: #ecf0f1;
+    color: #DEE0D9; /* Marble */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-    color: #3498db;
+    color: #66CC00; /* TELUS Green */
 }
 
 .footer-bottom {
     text-align: center;
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
-    color: #bdc3c7;
+    color: #B6B6B1; /* Galena */
 }
 
 /* Responsive Design */
@@ -237,7 +237,7 @@ footer {
     .nav-links {
         display: none;
     }
-    
+
     .hero h1 {
         font-size: 2.5rem;
     }
