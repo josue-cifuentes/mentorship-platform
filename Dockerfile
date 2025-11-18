@@ -1,20 +1,32 @@
-# Use an official Node runtime as the base image
-FROM node:18
+# Use Node.js LTS version
+FROM node:18-alpine
 
-# Set the working directory
-WORKDIR /usr/src/app
+# Print current working directory (for debugging)
+RUN pwd && ls -la
 
-# Copy package files first
+# Set working directory
+WORKDIR /app
+
+# Print working directory content (for debugging)
+RUN pwd && ls -la
+
+# Copy package files
 COPY package*.json ./
+
+# Print directory content after copy (for debugging)
+RUN pwd && ls -la
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application
+# Copy all other files
 COPY . .
+
+# Print final directory content (for debugging)
+RUN pwd && ls -la
 
 # Expose port
 EXPOSE 3000
 
-# Start the application
+# Start command
 CMD ["npm", "start"]
